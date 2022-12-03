@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Josefin+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="C:/Users/rapha/OneDrive/Documents/Email/Login7/Assets/css/indexlogin7.css">
+    
+    <title>Formulário com validação de CPF</title>
+
+</head>
+<body>
+    <section class="container">
+        <form class="formulario" method="post" action="#">
+        
+            <p class="icone">
+           <svg xmlns="http://www.w3.org/2000/svg" width="136" height="125" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+             <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+             <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+           </svg>
+            </p>
+                <h3 class="cabeçalho">Formulário de cadastro</h3>
+
+             <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" class="validar" placeholder="Nome:">
+
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" class="validar" placeholder="Sobrenome:">
+
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" class="cpf validar" placeholder="CPF:" onblur="formataCPF(this)"  pattern="[0-9]{11}">
+
+            <label for="usuario">Email</label>
+            <input type="text" id="usuario" class="usuario validar"  placeholder="Usuário:">
+
+            <div class="pass">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" class=" senha validar" placeholder="Senha:">
+            <img src="C:/Users/rapha/OneDrive/Documents/Email/Login7/Assets/images/eye1.png" class="olho1" alt="desenho de um olho aberto">
+            </div>
+            
+            <div class="pass">
+            <label for="repetirsenha">Repetir senha</label>
+            <input type="password" id="repetirsenha" class="repetirsenha validar" placeholder="Repetir senha:">
+            <img src="C:/Users/rapha/OneDrive/Documents/Email/Login7/Assets/images/eye1.png" class="olho2" alt="desenho de um olho aberto">
+
+            </div>
+        
+            <div id="cadastrar">
+                <button class="cadastrar">Cadastrar</button>
+            </div>
+        
+        </form>
+
+    </section>
+    <script src="C:/Users/rapha/OneDrive/Documents/Email/Login7/Assets/js/validaCPF.js"></script>
+    <script src="C:/Users/rapha/OneDrive/Documents/Email/Login7/Assets/js/indexlogin7(Aula_107).js"></script>
+   
+</body>
+</html>

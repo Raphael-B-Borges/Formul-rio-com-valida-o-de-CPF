@@ -1,0 +1,175 @@
+/*
+font-family: 'Gideon Roman', cursive;
+font-family: 'Josefin Sans', sans-serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   padding: 50px ;
+   background-image: radial-gradient(circle, rgb(10, 85, 99) 35%, rgb(9, 71, 82));
+   min-height: 100vh;
+   backdrop-filter: contrast(2) saturate(2);
+}
+.container{
+    position: relative;
+    border: 8px outset rgba(26, 89, 100, 0.514);
+    box-shadow:  0 0 3px 2px rgb(136, 220, 235), inset 0 0 3px 2px rgb(136, 220, 235);
+    width: 450px;
+   align-self: center;
+   align-items: center;
+   margin: auto;
+   border-radius:5px;
+}
+.formulario{
+    margin: 5px 10px;
+    position: relative;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+.icone{
+    margin: auto;
+    display: block;
+    text-align: center;
+   width: 100%;
+}
+.bi{
+    text-align: center;
+      align-self: center;
+      background-color: rgb(18, 105, 121);
+      color: rgba(109, 190, 204, 0.74);
+      filter: contrast(3) ;
+    margin-bottom: -10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 15%;
+    box-shadow:inset 0 0 5px 3px  rgb(136, 220, 235);
+    font-family: 'Gideon Roman', cursive;
+}
+.cabeçalho{
+    display: block;
+    width: 82%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.3;
+    color: rgb(136, 220, 235);
+    filter: saturate(2);
+    margin: -5px auto 15px auto;
+   
+}
+.cabeçalho::before{
+    content: " ";
+    width: 96%;
+    left: 2%;
+    height: 2px;
+    background-color: rgb(136, 220, 235);
+   display: flex;
+    align-self: center;
+    bottom: 2px ;
+    margin: 0 auto;
+    position: absolute;
+}
+.cabeçalho::after{
+    content: " ";
+    width: 75%;
+    left: 12.5%;
+    height: 2px;
+    background-color: rgb(136, 220, 235);
+   display: flex;
+    align-self: center;
+    bottom: -3px ;
+    margin: 0 auto;
+    position: absolute;
+}
+label{
+  display: none;
+}
+#nome, #usuario, #cpf,
+#sobrenome, #senha, #repetirsenha{
+    min-width: 100%;
+    margin: 1px auto 25px 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px double rgb(136, 220, 235);
+    padding: 13px 5px 0 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(136, 220, 235, 0.877);
+    filter: saturate(2);
+    position: relative;   
+}
+#nome:focus-within, #sobrenome:focus-within, #usuario:focus-within, #cpf:focus-within, 
+#senha:focus-within, #repetirsenha:focus-within, .cadastrar:focus-within{
+    box-shadow:inset 0 0 3px 1px rgb(136, 220, 235);
+    min-width: 100%;
+}
+#nome::placeholder, #usuario::placeholder, #cpf::placeholder,
+#sobrenome::placeholder, #senha::placeholder, #repetirsenha::placeholder{
+    color: rgb(136, 220, 235);
+    margin-bottom: -3px;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    font-size: 18px;
+    opacity: .65;
+    transition: all 300ms ease-in-out;
+}
+#nome:focus-within::placeholder,#sobrenome:focus-within::placeholder,
+ #usuario:focus-within::placeholder, #cpf:focus-within::placeholder,
+ #senha:focus-within::placeholder, #repetirsenha:focus-within::placeholder{
+    transform: translateY(-14px);
+    transition: all 300ms ease-in-out;
+    font-size: 15px;
+    opacity: .65;
+}
+#cadastrar{
+    margin:20px  auto;
+    text-align: center;
+}
+.cadastrar{
+    padding: 12px 26px;
+    border-radius: 15px;
+    background-color: rgb(18, 105, 121);
+    border: 2px inset rgb(101, 204, 223);
+    color:  rgb(136, 220, 235);
+    filter: contrast(3);
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    font-family: 'Gideon Roman', cursive;
+    letter-spacing: 1.2px;
+}
+.cadastrar:active{
+    background-color: rgb(30, 140, 160);
+    border: 2px outset rgb(88, 174, 189);
+    color: rgb(0, 77, 80);
+}
+.error-text{
+    color: rgb(255, 68, 21);
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: -24px;
+    margin-bottom: 9px;
+    line-height: 2.3;
+}
+.pass{
+    position: relative;
+}
+.pass img{
+    width: 8%;
+    right: 2px;
+    bottom: 52%;
+    position: absolute;
+    float: right;
+    display: flex;
+
+}
